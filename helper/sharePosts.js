@@ -27,16 +27,16 @@ const sharePosts = async () => {
   return res;
 };
 
-cron.schedule("*/10 * * * * *", () => {
-  sharePosts()
-    .then((data) => {
-      if (data.code === 200) {
-        console.log(`${data.num} posts added to account tasked`);
-      }
-    })
-    .catch((err) => {
-      console.log(err);
-    });
-});
+// cron.schedule("*/10 * * * * *", () => {
+//   sharePosts()
+//     .then((data) => {
+//       if (data.code === 200) {
+//         console.log(`${data.num} posts added to account tasked`);
+//       }
+//     })
+//     .catch((err) => {
+//       console.log(err);
+//     });
+// });
 
 module.exports = sharePosts;

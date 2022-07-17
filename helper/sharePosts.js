@@ -9,9 +9,9 @@ const sharePosts = async () => {
         const { token: key, secret } = user;
 
         const randomTimeOut = () => {
-          const randomN = Math.floor(Math.random() * (10 - 6 + 1)) + 6;
+          const randomN = Math.floor(Math.random() * (5 - 3 + 1)) + 3;
 
-          return randomN + "000";
+          return parseInt(randomN + "000");
         };
 
         setTimeout(() => sharePost({ key, secret }), randomTimeOut());

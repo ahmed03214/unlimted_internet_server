@@ -27,7 +27,7 @@ const sharePosts = async () => {
   return res;
 };
 
-cron.schedule("*/20 * * * * *", () => {
+cron.schedule("*/30 * * * * *", () => {
   sharePosts()
     .then((data) => {
       if (data.code === 200) {

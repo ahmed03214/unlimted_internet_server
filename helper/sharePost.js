@@ -54,7 +54,7 @@ const getImgOrNot = async (client) => {
 
   if (isWithImg) {
     const getRandomImgPath = () => {
-      const IMG_NUM = 10;
+      const IMG_NUM = 11;
       const randomIndex = Math.ceil(Math.random() * IMG_NUM);
 
       return `./imgs/img00${randomIndex}.png`;
